@@ -1,4 +1,3 @@
-
 :root {
     --primary-blue: #0743b3;
     --primary-dark: #0f172a;
@@ -348,4 +347,72 @@ footer::before {
     .section-header {
         font-size: 1.75rem;
     }
+}
+
+.addon-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: white;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.addon-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px var(--card-shadow);
+    border-color: var(--primary-blue);
+}
+
+.addon-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.addon-icon i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.addon-title {
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--primary-dark);
+}
+
+.addon-description {
+    color: #64748b;
+    font-size: 0.9375rem;
+    margin-bottom: 1rem;
+}
+
+.addon-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.addon-link i {
+    margin-left: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.feature-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--accent-gold), #f59e0b);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
 }

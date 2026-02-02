@@ -1,4 +1,3 @@
-
 :root {
     --primary-blue: #0743b3;
     --primary-dark: #0f172a;
@@ -27,7 +26,9 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
 }
-
+.title_device_size {
+    font-size: 1rem;
+}
 .text-sky-500 {
     color: var(--primary-blue) !important;
 }
@@ -62,82 +63,58 @@ body {
 
 .hero-section {
     position: relative;
-    padding: 8rem 0;
-    overflow: hidden;
-    background: linear-gradient(135deg, var(--light-blue) 0%, #ffffff 100%);
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(7, 67, 179, 0.7) 0%, rgba(7, 67, 179, 0.4) 50%, rgba(7, 67, 179, 0.8) 100%);
-    z-index: 1;
+    padding: 3rem 0 1.5rem 0;
+    text-align: center;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
-    color: white;
+    color: var(--primary-dark);
 }
 
 .hero-title {
     font-weight: 800;
     letter-spacing: -0.025em;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 6px 18px rgba(0,0,0,0.6);
-}
-
-.hero-title span:first-child {
-    color: #93c5fd;
-    text-shadow: 0 4px 12px rgba(147, 197, 253, 0.5);
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.55);
-    max-width: 600px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #64748b;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
 }
 
-.btn-primary {
-    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-    border: none;
-    color: white;
-    font-weight: 600;
-    padding: 0.75rem 2rem;
-    font-size: 1.125rem;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(7, 67, 179, 0.3);
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--card-shadow);
+    margin: 2rem 0;
 }
 
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(7, 67, 179, 0.4);
-    background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+#skillMap {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: grab;
+    transition: transform 0.1s ease;
 }
 
-.btn-outline-secondary {
-    border: 2px solid var(--primary-blue);
-    color: var(--primary-blue);
-    font-weight: 600;
-    border-radius: 50px;
-    padding: 0.5rem 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-secondary:hover {
-    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(7, 67, 179, 0.3);
+#skillMap:active {
+    cursor: grabbing;
 }
 
 .section-header {
@@ -154,95 +131,6 @@ body {
 
 .text-muted-foreground {
     color: #64748b !important;
-}
-
-.card-game {
-    border: none;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    height: 100%;
-    background: white;
-    box-shadow: 0 4px 20px var(--card-shadow);
-    overflow: hidden;
-    position: relative;
-}
-
-.card-game::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-blue), var(--accent-gold));
-}
-
-.card-game:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(7, 67, 179, 0.25);
-}
-
-.card-img-top {
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
-    transition: transform 0.3s ease;
-}
-
-.card-game:hover .card-img-top {
-    transform: scale(1.05);
-}
-
-.card-body {
-    padding: 1.5rem;
-}
-
-.card-title {
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-    color: var(--primary-dark);
-    font-size: 1.125rem;
-    transition: color 0.3s ease;
-}
-
-.card-game:hover .card-title {
-    color: var(--primary-blue);
-}
-
-.card-text {
-    color: #64748b;
-    margin-bottom: 0.5rem;
-    font-size: 0.9375rem;
-}
-
-.bg-muted-light {
-    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.bg-muted-light::before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--accent-gold) 0%, transparent 70%);
-    opacity: 0.1;
-}
-
-.bg-muted-light::after {
-    content: '';
-    position: absolute;
-    bottom: -80px;
-    left: -80px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--accent-purple) 0%, transparent 70%);
-    opacity: 0.08;
 }
 
 footer {
@@ -280,9 +168,7 @@ footer::before {
     display: inline-block;
     box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
 }
-.title_device_size {
-    font-size: 1rem;
-}
+
 .footer-link {
     color: #475569 !important;
     text-decoration: none;
@@ -328,24 +214,34 @@ footer::before {
 
 @media (min-width: 992px) {
     .hero-section {
-        padding: 14rem 0;
+        padding: 4rem 0 1.5rem 0;
     }
     
     .hero-title {
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
     
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.15rem;
     }
 }
 
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     
     .section-header {
         font-size: 1.75rem;
     }
+    
+    .map-container {
+        height: 50vh;
+    }
+    
+    .full-name {
+        display: none;
+    }
+    
+    
 }
