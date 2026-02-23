@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akashick Records of Tensura - Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="https://media.forgecdn.net/avatars/thumbnails/1131/541/64/64/638691146705825734.png" alt="Logo" class="me-2" width="32" height="32">
+                <span class="title_device_size"><span class="text-sky-500">Akashick</span> <span>Records of Tensura</span></span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./wiki.html">Wiki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./skills_map.html" rel="noopener noreferrer">Skill-map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./store.html" rel="noopener noreferrer">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Addons.html">Addons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./server_info.html"  rel="noopener noreferrer">Server Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                <span>Akashick Store:</span> 
+                <span>Premium Items</span>
+            </h1>
+            <p class="hero-subtitle">Enhance your Tensura adventure with exclusive items, cosmetics, and powerful gear. Support the server and get unique rewards!</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="store-sidebar">
+                        <h3 class="h5 fw-bold mb-3">Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#" class="active">All Items</a></li>
+                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Pets</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">VIP Ranks</a></li>
+                            <li><a href="#">Special Bundles</a></li>
+                        </ul>
+                        
+                        <div class="filter-group">
+                            <h5>Price Range</h5>
+                            <a href="#" class="filter-option active">All Prices</a>
+                            <a href="#" class="filter-option">$0 - $5</a>
+                            <a href="#" class="filter-option">$5 - $15</a>
+                            <a href="#" class="filter-option">$15 - $30</a>
+                            <a href="#" class="filter-option">$30+</a>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h5>Sort By</h5>
+                            <a href="#" class="filter-option active">Featured</a>
+                            <a href="#" class="filter-option">Price: Low to High</a>
+                            <a href="#" class="filter-option">Price: High to Low</a>
+                            <a href="#" class="filter-option">Newest</a>
+                            <a href="#" class="filter-option">Popular</a>
+                        </div>
+                        
+                        <div class="bg-light p-3 rounded mt-3">
+                            <h6 class="fw-bold mb-2"><i class="fas fa-gift text-warning me-2"></i>Special Offer</h6>
+                            <p class="mb-1 small">Get 20% off when you spend $25+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="section-header mb-0">Shop Items</h2>
+                        <div class="cart-icon">
+                            <a href="#" class="btn btn-primary-cart position-relative">
+                                <i class="fas fa-shopping-cart me-2"></i>Cart
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="sort-dropdown">
+                        <select class="form-select" id="sortSelect">
+                            <option>Sort by: Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest First</option>
+                            <option>Most Popular</option>
+                        </select>
+                    </div>
+                    
+                    <div class="row g-4" id="products">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-card">
+                                <span class="product-badge">BESTSELLER</span>
+                                <img src="https://placehold.co/600x400/d97706/white?text=VIP+Rank" alt="VIP Rank">
+                                <div class="product-content">
+                                    <h3 class="h5">VIP Rank</h3>
+                                    <p class="text-muted mb-2">Exclusive perks and cosmetics</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="product-price">$14.99</span>
+                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-card">
+                                <span class="product-badge">NEW</span>
+                                <img src="https://placehold.co/600x400/1e40af/white?text=Tamed+Dragon" alt="Tamed Dragon">
+                                <div class="product-content">
+                                    <h3 class="h5">Tamed Dragon</h3>
+                                    <p class="text-muted mb-2">Fly with style and power</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="product-price">$24.99</span>
+                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-card">
+                                <img src="https://placehold.co/600x400/0743b3/white?text=Storage+Upgrade" alt="Storage Upgrade">
+                                <div class="product-content">
+                                    <h3 class="h5">Storage Upgrade</h3>
+                                    <p class="text-muted mb-2">Extra 3 netherite backpacks</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="product-price">$7.99</span>
+                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-card">
+                                <span class="product-badge">LIMITED</span>
+                                <img src="https://placehold.co/600x400/f59e0b/white?text=Demon+Mask" alt="Demon Mask">
+                                <div class="product-content">
+                                    <h3 class="h5">Demon face mask</h3>
+                                    <p class="text-muted mb-2">Exclusive cosmetic skin</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="product-price">$19.99</span>
+                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-card">
+                                <img src="https://placehold.co/600x400/ef4444/white?text=Skill+Reset" alt="Skill Reset">
+                                <div class="product-content">
+                                    <h3 class="h5">Skill Scroll</h3>
+                                    <p class="text-muted mb-2">Skill reset scroll + Charecter reset scroll + Race reset scroll</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="product-price">$4.99</span>
+                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-card">
+                                <img src="https://placehold.co/600x400/10b981/white?text=Pet+Companion" alt="Pet Companion">
+                                <div class="product-content">
+                                    <h3 class="h5">Wolf Pet</h3>
+                                    <p class="text-muted mb-2">Loyal battle companion</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="product-price">$12.99</span>
+                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-card">
+                                <span class="product-badge">BUNDLE</span>
+                                <img src="https://placehold.co/600x400/8b5cf6/white?text=Starter+Pack" alt="Starter Pack">
+                                <div class="product-content">
+                                    <h3 class="h5">Starter Pack</h3>
+                                    <p class="text-muted mb-2">VIP + Dragon + 1000000 Coins</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="product-price">$29.99 <span class="text-decoration-line-through text-muted ms-2">$44.97</span></span>
+                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-card">
+                                <img src="https://placehold.co/600x400/06b6d4/white?text=Teleport+Scrolls" alt="Teleport Scrolls">
+                                <div class="product-content">
+                                    <h3 class="h5">Teleport Scrolls (10)</h3>
+                                    <p class="text-muted mb-2">Instant world travel</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="product-price">$6.99</span>
+                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <nav class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="h5 mb-0">
+                            <span class="text-gradient-blue">Akashick</span> <span>Records of Tensura</span>
+                        </span>
+                    </div>
+                    <p class="text-muted small">The ultimate Minecraft modpack inspired by tensura. Battle bosses, create godly gear, and collect all the skills.</p>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="h6 text-dark mb-3 fw-bold">Explore</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">Server map</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Community</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Quests</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Complete Game Guide</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Rules</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Mod List</a></li>
+                        <li class="mb-2"><a href="/wiki/infusion-effects" class="footer-link">Official tensura</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="h6 text-dark mb-3 fw-bold">Tensura mods installed</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">Mystecism</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Ani tensura</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Guild Lady</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Ash of sin</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">BTR ultima</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">No game no life</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Tensura ture dragons</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="h6 text-dark mb-3 fw-bold">Community</h3>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="https://discord.gg/5BSTQUWQ97" class="community-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-users"></i>
+                            <span>Join Discord</span>
+                        </a>
+                        <a href="" class="community-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-heart"></i>
+                            <span>Support on Patreon</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4 border-top border-secondary">
+                <div class="col-12 text-center">
+                    <p class="text-muted small mb-0">© 2024 Akashick Records of Tensura. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add to cart functionality
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.querySelector('.cart-count');
+                let count = parseInt(cartCount.textContent);
+                cartCount.textContent = count + 1;
+                
+                // Visual feedback
+                this.innerHTML = '<i class="fas fa-check me-1"></i>Added!';
+                this.classList.remove('btn-primary');
+                this.classList.add('btn-success');
+                
+                setTimeout(() => {
+                    this.innerHTML = 'Add to Cart';
+                    this.classList.remove('btn-success');
+                    this.classList.add('btn-primary');
+                }, 1500);
+            });
+        });
+        
+        // Sort dropdown functionality
+        document.getElementById('sortSelect').addEventListener('change', function() {
+            const selectedOption = this.options[this.selectedIndex].text;
+            alert(`Sorting by: ${selectedOption}`);
+        });
+    </script>
+</body>
+</html>
+
